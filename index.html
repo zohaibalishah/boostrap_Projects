@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize Dashboard</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="materialize/css/materialize.min.css">
+ <style>
+   header, .main, footer {
+      padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, .main, footer {
+        padding-left: 0;
+      }
+    }
+        
+        body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .main {
+        flex: 1 0 auto;
+    }
+     
+ </style>
+  
+</head>
+<body>
+
+    <nav class="blue">
+        <div class="nav wrapper">
+            <div class="container">
+                <a href="" class="brand-logo center">Admin </a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+                    <i class="material-icons">menu</i>
+                </a>
+                <!-- <ul class="right hide-on-small-and-down collection" style="margin: 0px;border: 0px solid transparent;">
+                    <li class="collection-item avatar " style="background-color:  transparent;">
+                        <i class="material-icons  white blue-text">notifications_active</i>
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </nav>
+   
+    <ul id="slide-out" class="sidenav sidenav-fixed" >
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="img/news/news-thum-3.jpg" class="responsive-img" />
+                    </div>
+                    <a href="#">
+                            <img src="img/profile.jpg" class="circle" />
+                    </a>
+                    <span class="white-text name">zohaib ali shah</span>
+                    <span class="white-text email">zohaibalishah@gmail.com</span>
+                </div>
+            </li>
+            <li>
+                <a  href="#!">
+                    <i class="material-icons  white blue-text">dashboard</i>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                    <a  href="#!">
+                        <i class="material-icons  white blue-text">peoples</i>
+                        Users
+                    </a>
+            </li>
+            <li>
+                    <a  href="#!">
+                        <i class="material-icons  white blue-text">favorite_border</i>
+                        Favorite
+                    </a>
+            </li>  
+            <div class="divider"></div>
+            <li>
+                    <a  href="#!">
+                        <i class="material-icons  white blue-text">help</i>
+                        Help
+                    </a>
+            </li> 
+            <li>
+                    <a  href="#!">
+                        <i class="material-icons  white blue-text">exit_to_app</i>
+                        Logout
+                    </a>
+            </li>  
+            <div class="divider"></div>
+
+            <ul class="collapsible">
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Admin Menu</div>
+                      <div class="collapsible-body">
+                            <ul class="collection">
+                                    <li class="collection-item">
+                                            <a  href="#!">
+                                                    <i class="material-icons  white blue-text">exit_to_app</i>
+                                                    Logout
+                                                </a>
+                                    </li>
+                                    <li class="collection-item"><a  href="#!">
+                                            <i class="material-icons  white blue-text">exit_to_app</i>
+                                            Logout
+                                        </a></li>
+                                  </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="collapsible-header"><i class="material-icons">place</i>Comments</div>
+                      <div class="collapsible-body">
+                            <ul class="collection">
+                                    <li class="collection-item">
+                                            <a  href="#!">
+                                                    <i class="material-icons  white blue-text">exit_to_app</i>
+                                                    Logout
+                                                </a>
+                                    </li>
+                                    <li class="collection-item"><a  href="#!">
+                                            <i class="material-icons  white blue-text">exit_to_app</i>
+                                            Logout
+                                        </a></li>
+                                  </ul>
+                      </div>
+                    </li>
+                   
+                  </ul>
+   </ul>
+
+  <div class="main">
+        <div class="row">
+            <div class="col l12">
+                    This is a slide out menu. You can add a dropdown to your sidebar by using our c
+                    ollapsible component. If you want to see a demo, our sidebar will use this on
+                     smaller screens. To use this in conjunction with 
+                    a fullscreen navigation, you have to use two copies of the same UL.
+            </div>
+        </div>
+  </div>
+
+  
+
+  <footer class="page-footer blue">
+        <div class="container">
+          <div class="row">
+            <div class="col l12 s12">
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2019 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+        </div>
+      </footer>
+       
+    <script src="materialize/js/jquery.js"></script>
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+    </script>
+</body>
+</html>
